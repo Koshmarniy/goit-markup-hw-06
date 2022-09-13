@@ -758,6 +758,7 @@ img {
 .modal-btn {
     position: absolute;
     top: 10px;
+    
     right: 10px;
   
     width: 30px;
@@ -772,4 +773,9 @@ img {
     border-radius: 50%;
   
     cursor: pointer;
+  }
+
+/* Стилізація форм модального вікна */
+  textarea {
+    resize: none;
   }
