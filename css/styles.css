@@ -811,6 +811,29 @@ img {
     margin-bottom: 30px;
 }
 
+.icon-checked {
+    opacity: 0;
+    transition: opacity var(--anim-fast);
+}
+.icon-unchecked {
+    opacity: 1;
+    transition: opacity var(--anim-fast);
+}
+
+.register-form-checkbox:checked + .register-form-icons .icon-checked {
+    opacity: 1;
+}
+.register-form-checkbox:checked + .register-form-icons .icon-unchecked {
+    opacity: 0;
+}
+
+/* Бордер для  */
+/* .register-form-checkbox:focus + .register-form-icons {
+    outline: 2px solid var(--blue-bg-cl);
+    outline-offset: 1px;
+    border-radius: 2px;
+  } */
+
 .register-form-btn {
     display: block;
     margin: 0 auto;
@@ -881,7 +904,7 @@ img {
     display: block;
     resize: none;
     outline: transparent;
-    position: absolute;
+
     width: 100%;
     height: 120px;
 
@@ -891,5 +914,19 @@ img {
     border-radius: 4px;
 }
 
+.register-form-desc {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24px / 14px);
+    letter-spacing: 0.03em;
+    color: #757575;
+    user-select: none;
+}
 
+.register-form-link {
+    color: var(--blue-bg-cl);
+    text-decoration: underline;
+}
 
